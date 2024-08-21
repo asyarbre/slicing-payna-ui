@@ -19,7 +19,7 @@
         <a href="/">
           <img src="public/images/logo.png" alt="Logo Payna" />
         </a>
-        <ul class="flex gap-x-14">
+        <ul class="hidden lg:flex lg:gap-x-14">
           <li>
             <a href="#home" class="font-semibold">Home</a>
           </li>
@@ -33,14 +33,16 @@
             <a href="#pricing">Pricing</a>
           </li>
         </ul>
-        <a href="" class="bg-gray-light py-3 px-12 rounded-full">Sign In </a>
+        <a href="" class="hidden lg:block bg-gray-light py-3 px-12 rounded-full"
+          >Sign In
+        </a>
       </nav>
     </header>
     <!-- End Navbar -->
     <main class="container mb-32">
       <!-- Hero -->
       <section class="flex gap-x-2 items-center mt-24">
-        <div class="w-1/2">
+        <div class="w-full lg:w-1/2">
           <h2 class="font-bold text-[55px]">
             Manage Payroll <br />
             Like an Expert
@@ -63,11 +65,13 @@
       </section>
       <!-- End Hero -->
       <!-- Companies-->
-      <section class="flex items-center justify-between mt-16">
+      <section
+        class="flex flex-col lg:flex-row lg:items-center lg:justify-between mt-16"
+      >
         <h4 class="text-gray-dark font-semibold">
-          Trusted by <br />Global Companies
+          Trusted by <br class="hidden lg:block" />Global Companies
         </h4>
-        <div class="flex gap-12">
+        <div class="flex flex-wrap gap-12 mt-8 lg:mt-0">
           <img
             src="public/images/company-1.png"
             class="h-8 w-auto"
@@ -190,11 +194,11 @@
       <!-- End Your Busineess-->
 
       <!-- Join -->
-      <section class="mt-32 flex items-center gap-x-16">
-        <div class="w-1/2">
+      <section class="mt-32 flex flex-col lg:flex-row lg:items-center gap-x-16">
+        <div class="w-full lg:w-1/2">
           <img src="public/images/image.png" alt="image" />
         </div>
-        <div>
+        <div class="text-center mt-10 lg:text-start lg:mt-0">
           <h6 class="font-bold text-orange">Save More Time</h6>
           <h2 class="font-bold text-4xl mt-2">And Boost Productivity</h2>
           <p class="leading-8 tracking-normal text-gray mt-8">
@@ -202,14 +206,14 @@
             business, so we need to take care of them
           </p>
           <form action="" class="mt-10">
-            <div class="flex items-center">
+            <div class="flex flex-col lg:flex-row items-center">
               <input
                 type="email"
                 placeholder="Email Address"
-                class="w-[300px] bg-gray-light py-3 px-4 rounded-full focus:outline-none"
+                class="w-full lg:w-[300px] bg-gray-light py-3 px-4 rounded-full focus:outline-none"
               />
               <button
-                class="bg-blue text-white font-semibold py-3 px-12 rounded-full -ml-12"
+                class="w-full bg-blue text-white font-semibold py-3 px-12 rounded-full mt-3 lg:mt-0 lg:-ml-12"
               >
                 Get Started
               </button>

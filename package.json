@@ -1,0 +1,15 @@
+{
+  "name": "slicing-payna-ui",
+  "version": "1.0.0",
+  "description": "Slicing UI Payna Finance Company Profile",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./src/style.css --watch"
+  },
+  "author": "asyari",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.10"
+  }
+}
